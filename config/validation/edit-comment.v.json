@@ -1,0 +1,33 @@
+{
+    "title": "edit comment",
+    "type": "object",
+    "properties": {
+      "body": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "string",
+            "minLength": 1
+          },
+          "commentId": {
+            "type": "string",
+            "minLength": 24,
+            "maxLength": 24,
+            "pattern": "^[a-fA-F0-9]{24}$"
+          },
+          "parentCommentId": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "content",
+          "commentId",
+          "parentCommentId"
+        ]
+      }
+    },
+    "required": [
+      "body"
+    ]
+  }
+  

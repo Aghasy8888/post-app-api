@@ -1,0 +1,24 @@
+{
+  "title": "update post",
+  "type": "object",
+  "properties": {
+    "body": {
+      "type": "object",
+      "properties": {
+        "content": {
+          "type": "string",
+          "minLength": 1
+        },
+        "privacy": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "body"
+  ]
+}

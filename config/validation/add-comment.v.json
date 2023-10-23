@@ -1,0 +1,44 @@
+{
+    "title": "add comment",
+    "type": "object",
+    "properties": {
+      "body": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "string",
+            "minLength": 1
+          },
+          "parentCommentId": {
+            "type": "string",
+            "minLength": 24,
+            "maxLength": 24,
+            "pattern": "^[a-fA-F0-9]{24}$"
+          },
+          "parentId": {
+            "type": "string",
+            "minLength": 24,
+            "maxLength": 24,
+            "pattern": "^[a-fA-F0-9]{24}$"
+          },
+          "authorName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "authorSurname": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "content",
+          "authorName",
+          "authorSurname"
+        ]
+      }
+    },
+    "required": [
+      "body"
+    ]
+  }
+  

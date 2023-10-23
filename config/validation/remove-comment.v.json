@@ -1,0 +1,26 @@
+{
+    "title": "remove comment",
+    "type": "object",
+    "properties": {
+      "body": {
+        "type": "object",
+        "properties": {
+          "commentId": {
+            "type": "string",
+            "minLength": 24,
+            "maxLength": 24,
+            "pattern": "^[a-fA-F0-9]{24}$"
+          },
+          "parentCommentId": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "commentId"
+        ]
+      }
+    },
+    "required": [
+      "body"
+    ]
+  }

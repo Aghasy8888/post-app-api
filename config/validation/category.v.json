@@ -1,0 +1,13 @@
+{
+    "title": "post category",
+    "type": "object",
+    "properties": {
+      "category": {
+        "type": "string",
+        "pattern": "^(general|sports|news|music|politics)$",
+        "flags": "i"
+      }
+    },
+    "additionalProperties": false
+  }
+  
